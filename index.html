@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task-3</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            table{
+                width:300px;
+                border-collapse:collapse;
+                /*border-spacing:0; works w/o border-collapse:collapse*/
+            }
+            tr,th,td{
+                border:1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Header-->
+        <header>Header tag is here!</header>
+        <!--Nav-->
+        <nav>
+            <a href="http://www.google.com" target="_blank">Google link</a>
+            <a href="http://www.w3schools.com" target="_blank">W3schools link</a>
+            <a href="https://github.com" target="_blank">GitHub link</a>
+            <a href="https://www.codecademy.com" target="_blank">Codeacademy link</a>
+        </nav>
+        <!--Table-->
+        <table>
+            <caption>Table example</caption>
+            <thead>
+                <tr>
+                    <th>table-header</th>
+                    <th>table-header</th>
+                    <th>table-header</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>table-footer</th>
+                    <th>table-footer</th>
+                    <th>table-footer</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>cell-1</td>
+                    <td>cell-3</td>
+                    <td>cell-5</td>
+                </tr>
+                <tr>
+                    <td>cell-2</td>
+                    <td>cell-4</td>
+                    <td>cell-6</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Section-->
+        <div>
+            <section>
+                <h1>Wikipedia</h1>
+                <article>
+                    <h3>Lorem ipsum</h3>
+                        <p>
+                         Lorem ipsum — класичний варіант умовного беззмістовного тексту, що вставляється в макет сторінки. Lorem ipsum — це перекручений уривок з філософського трактату Цицерона «Про межі добра і зла», написаного в 45 році до нашої ери латинською мовою. З точки зору зручності сприйняття друкованих текстів Lorem ipsum показує, що латинська графіка найслушніше пристосо-<wbr>вується для написання саме творів латинською мовою (тут враховується частота вживання символів з виносними елементам, таких як g, l, h, p).
+                        </p>
+                        <aside>
+                            <h4>More information</h4>
+                            <p>
+                            A variation of the ordinary lorem ipsum text has been used in typesetting since the 1960s or earlier, when it was popularized by advertisements for Letraset transfer sheets. It was introduced to the Information Age in the mid-1980s by Aldus Corporation, which employed it in graphics and word processing templates for its desktop publishing program, PageMaker, for the Apple Macintosh.
+                            </p>
+                        </aside>
+                </article>
+            </section>
+        </div>
+        <!--List-->
+        <p><b>List example</b></p>
+        <ul>
+            <li type="circle">info-node-1</li>
+            <li type="square">info-node-2</li>
+            <li type="disc">info-node-3</li>
+        </ul>
+        <ol type="a">
+            <li>info-node-4</li>
+            <li>info-node-5</li>
+            <li>info-node-6</li>
+        </ol>   
+        <ol reversed>
+            <li>info-node-7</li>
+            <li>info-node-8</li>
+            <li>info-node-9</li>
+        </ol>
+        <!--Form-->
+        <form>
+            <fieldset>
+                <legend>Contact information:</legend>
+                <label for="first-name">First name:</label><br> <!--validator error w/o id-->
+                <input type="text" id="first-name" name="get-first-name"><br>
+                <label for="last-name">Last name:</label><br>
+                <input type="text" id="last-name" name="get-last-name"><br>
+                <label for="zip-code">Zip code:</label><br>
+                <input type="text" id="zip-code" name="get-zip" pattern="[0-9] {5}" title="Zip consists of five digits"><br>
+                <label for="email-request">Email:</label><br>
+                <input type="email" id="email-request" name="get-email" required><br><br>
+                <label for="message-request">Say something:</label><br>
+                <textarea id="message-request" name="message-field" placeholder="Type your message here. Thank you!" rows="7" cols="30"></textarea><br>
+                <input type="submit" value="Submit"> 
+            </fieldset>
+        </form> <br>
+        <!--2d Table-->
+        <table>
+            <tr>   
+                <th rowspan="2">Summary</th>
+                <th>Quarter I</th>
+                <th>Quarter II</th>
+            </tr>
+            <tr>
+                <th>Results</th>
+                <th>Results</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>10</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>30</td>
+                <td>40</td>
+            </tr>
+            
+            <tr>
+                <td>Total</td>
+                <td colspan="2">100</td>
+            </tr>
+        </table>
+        <!--Footer-->
+        <footer>Footer tag is here!</footer>
+    </body>
+</html>
